@@ -1,25 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import Nav from "./components/Nav";
+import Hero from "./sections/Hero";
+import Affiliations from "./sections/Affiliations";
+import AboutUs from "./sections/AboutUs";
+import Adoption from "./sections/Adoption";
+import Contact from "./sections/Contact";
+import Margo from "./sections/Margo";
+import Hank from "./sections/Hank";
+import AboutBreed from "./sections/AboutBreed";
+import History from "./sections/History";
+import HealthGenetics from "./sections/HealthGenetics";
+import {
+  BrowserRouter as Router,
+  Outlet,
+  Route,
+  Routes,
+} from "react-router-dom";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Nav />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/affiliations" element={<Affiliations />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/adoption" element={<Adoption />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/margo" exact element={<Margo />} />
+          <Route path="/hank" exact element={<Hank />} />
+          <Route path="/about-breed" exact element={<AboutBreed />} />
+          <Route path="/history" exact element={<History />} />
+
+          <Route
+            path="/health-and-genetics"
+            exact
+            element={<HealthGenetics />}
+          />
+        </Routes>
+        {/* <Hero />
+        <Affiliations />
+        <AboutUs />
+        <Adoption />
+        <Contact /> */}
+        {/* <OurCorgis /> */}
+      </div>
+    </Router>
   );
-}
+};
+const Home = () => {
+  return (
+    <>
+      <Hero />
+      <Affiliations />
+      <AboutUs />
+      <Adoption />
+      <Contact />
+    </>
+  );
+};
 
 export default App;
