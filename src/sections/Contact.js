@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 //import "./contact.css";
 import { db } from "../firebase";
-import { addDoc, collection } from "firebase/firestore";
+import { addDoc, collection, where, query, getDocs } from "firebase/firestore";
 import Button from "../components/Button";
 import { group2 } from "../assets/images";
 
@@ -18,26 +18,38 @@ const Contact = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
-    setValues(prevValues)({
+    setValues((prevValues) => ({
       ...values,
       [name]: value,
-    });
+    }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (values) {
-      await addDoc(collection(db, "contacts"), {
-        user_name: values.user_name,
-        user_email: values.user_email,
-        user_address: values.user_address,
-        message: values.message,
-      });
-
-      //alert("Message was sent!");
-      setValues(initialValues);
+      try {
+        await addDoc(collection(db, "contacts"), {
+          user_name: values.user_name,
+          user_email: values.user_email,
+          user_address: values.user_address,
+          message: values.message,
+        });
+        //alert("Message was sent!");
+      } catch (error) {
+        console.error("Error submitting the form:", error);
+      } finally {
+        setValues(initialValues);
+      }
     }
   };
+  // const email = "aida.aitenova@yahoo.com.com";
+  // const querySnapshot = await getDocs(
+  //   query(collection(db, "contacts"), where("user_email", "==", email))
+  // );
+
+  // querySnapshot.forEach((doc) => {
+  //   // Access each document's data here...
+  // });
 
   return (
     <section className="w-full flex xl:flex-row max-sm:flex-col justify-center min-h-screen gap-10 max-container ">
@@ -55,7 +67,7 @@ const Contact = () => {
             type="text"
             placeholder="Full Name"
             name="user_name"
-            value={values.fullName}
+            value={values.user_name}
             onChange={handleInputChange}
             required
           />
@@ -64,7 +76,7 @@ const Contact = () => {
             type="email"
             placeholder="Email"
             name="user_email"
-            value={values.email}
+            value={values.user_email}
             onChange={handleInputChange}
             required
             className="py-4 px-4 rounded-md"
@@ -74,7 +86,7 @@ const Contact = () => {
             type="text"
             placeholder="Home address"
             name="user_address"
-            value={values.address}
+            value={values.user_address}
             onChange={handleInputChange}
             required
             className="py-4 px-4 rounded-md"

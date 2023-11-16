@@ -10,6 +10,7 @@ import Hank from "./sections/Hank";
 import AboutBreed from "./sections/AboutBreed";
 import History from "./sections/History";
 import HealthGenetics from "./sections/HealthGenetics";
+import Gallery from "./components/Gallery";
 import {
   BrowserRouter as Router,
   Outlet,
@@ -23,6 +24,7 @@ const App = () => {
         <Nav />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/affiliations" element={<Affiliations />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/adoption" element={<Adoption />} />
@@ -52,8 +54,10 @@ const Home = () => {
   return (
     <>
       <Hero />
+
       <Affiliations />
       <AboutUs />
+      <Gallery />
       <Adoption />
       <Contact />
     </>

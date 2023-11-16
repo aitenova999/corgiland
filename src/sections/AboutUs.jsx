@@ -1,5 +1,5 @@
 import React from "react";
-import { margo1, aboutMe } from "../assets/images";
+import { margo1, aboutMe, Nastya, Sasha } from "../assets/images";
 
 const AboutUs = () => {
   return (
@@ -17,9 +17,9 @@ const AboutUs = () => {
       "
         >
           <img
-            src={aboutMe}
-            width={400}
-            height={420}
+            src={Nastya}
+            width={450}
+            height={500}
             className="rounded-md shadow-lg"
           />
         </div>
@@ -59,7 +59,7 @@ const AboutUs = () => {
       "
         >
           <img
-            src={margo1}
+            src={Sasha}
             width={400}
             height={420}
             className="rounded-md shadow-lg"

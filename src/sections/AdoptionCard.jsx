@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
 
-const AdoptionCard = ({ imgURL, label, text }) => {
+const AdoptionCard = ({ imgURL, label, text, form }) => {
   return (
     <div className="flex-2 sm:w-[350px] sm:min-w-[450px] w-full rounded-[20px] shadow-3xl px-6 py-8 bg-light-blue">
       <div className=" flex justify-center items-center rounded-md">
@@ -20,7 +20,9 @@ const AdoptionCard = ({ imgURL, label, text }) => {
         {text}
       </p>
       <div className="flex justify-center pt-3">
-        <Button label="Apply" />
+        <a target="_blank" href={form}>
+          <Button label="Apply" />
+        </a>
       </div>
     </div>
   );

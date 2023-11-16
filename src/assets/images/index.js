@@ -19,6 +19,20 @@ import Margo5 from "./Margo5.jpg";
 import MargoHank2 from "./MargoHank2.jpg";
 import Hank7 from "./Hank7.jpg";
 import Frame3 from "./Frame 3.png";
+import Hank9 from "./Hank9.jpg";
+import Hank10 from "./Hank10.jpg";
+import Hank11 from "./Hank11.jpg";
+import Hank12 from "./Hank12.jpg";
+import Hank13 from "./Hank13.jpg";
+import Margo9 from "./Margo9.jpg";
+import Margo10 from "./Margo10.jpg";
+import Margo11 from "./Margo11.jpg";
+import Margo12 from "./Margo12.jpg";
+import Margo13 from "./Margo13.jpg";
+import Margo14 from "./Margo14.jpg";
+import MargoandHank3 from "./MargoandHank3.jpg";
+import Nastya from "./Nastya.jpg";
+import Sasha from "./Sasha.jpg";
 
 export {
   hank1,
@@ -42,4 +56,18 @@ export {
   MargoHank2,
   Hank7,
   Frame3,
+  Hank9,
+  Hank10,
+  Hank11,
+  Hank12,
+  Hank13,
+  Margo9,
+  Margo10,
+  Margo11,
+  Margo12,
+  Margo13,
+  Margo14,
+  MargoandHank3,
+  Nastya,
+  Sasha,
 };
