@@ -19,7 +19,7 @@ const Hank = () => {
         </h2>
       </div>
       <div className="flex flex-row justify-around max-lg:flex-col">
-        <div className="my-6">
+        <div className="my-6 max-lg:flex justify-center">
           <img
             src={Hank2}
             width={480}
@@ -74,7 +74,7 @@ const Hank = () => {
             him.
           </p>
         </div>
-        <div>
+        <div className="max-lg:flex justify-center mb-4">
           <img
             src={Hank3}
             width={480}

@@ -5,12 +5,12 @@ const AboutUs = () => {
   return (
     <section
       id="about-us"
-      className=""
+      className="sm:flex-col-reverse"
       //   className="bg-[#8af9e3]"
       //   className="flex justify-between  max-lg:flex-col gap-10 w-full max-container"
     >
       {/* <div className="relative flex-1 flex justify-center items-center object-left-top xl:min-h-screen max-xl:py-40 bg-cover bg-center min-h-screen"> */}
-      <div className=" relative top-20 flex flex-1 justify-around gap-10 max-lg:flex-col bg-gradient-to-r from-teal-100 to-cyan-200 ">
+      <div className=" relative top-4 flex flex-1 justify-around gap-10 max-lg:flex-col-reverse bg-gradient-to-r from-teal-100 to-cyan-200 ">
         {/* <div className="relative pt-12 flex-1 w-1/2 flex justify-center items-center xl:min-h-screen max-xl:py-20 bg-teal-100 bg-cover bg-center rounded-sm"> */}
         <div
           className=" rleative  mt-8 max-sm:flex items-center justify-center 
@@ -55,7 +55,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div
-          className=" rleative  py-8 max-sm:flex items-center justify-center
+          className=" rleative items-center py-8 max-sm:flex  justify-center
       "
         >
           <img

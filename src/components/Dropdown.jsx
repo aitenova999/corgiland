@@ -1,10 +1,14 @@
 const Dropdown = ({ submenus, dropdown }) => {
   return (
-    <ul className={`dropdown ${dropdown ? "block" : "hidden"}`}>
+    <ul
+      className={`dropdown ${
+        dropdown ? "block" : "hidden"
+      } bg-teal-300 rounded-md`}
+    >
       {submenus.map((submenu, index) => (
-        <li key={index} className=" ">
+        <li key={index} className="pl-2 py-2 ">
           <a
-            className="bg-cyan-200 rounded-md hover:bg-white py-2 mb-2 text-cyan-800 "
+            className="py-2 mb-3 px-2 text-cyan-800 hover:text-white"
             href={submenu.url}
           >
             {submenu.title}

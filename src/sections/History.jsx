@@ -4,8 +4,8 @@ import { Hank7, Margo5 } from "../assets/images";
 const History = () => {
   return (
     <section id="history">
-      <div className="flex flex-row justify-around relative mt-10 max-lg:flex-col">
-        <div>
+      <div className="flex flex-row justify-around relative mt-10 max-lg:flex-col-reverse ">
+        <div className="max-lg: flex justify-center h-3/4 pt-6 ">
           <img
             src={Hank7}
             width={550}
@@ -18,7 +18,7 @@ const History = () => {
           <h2 className=" flex justify-center my-4 font-playfair bold  text-cyan-800 text-4xl ">
             A Brief History
           </h2>
-          <p className="font-montserrat bold text-slate-gray text-lg leading-8 mt-6  sm:max-w-sm px-1">
+          <p className="font-montserrat bold text-slate-gray text-lg leading-8 mt-6  sm:max-w-sm px-2">
             A small but hardy dog was found centuries ago in the remote, misty
             green hills of Cardiganshire in Wales. He was a “Corgi”, “Cor” for
             dwarf and “gi” for dog. This “yard-long” dog was highly valued by
@@ -44,7 +44,7 @@ const History = () => {
             refined, dignified and foxy-looking.
           </p>
 
-          <p className="font-montserrat bold text-slate-gray text-lg leading-8 mt-6  sm:max-w-sm px-1">
+          <p className="font-montserrat bold text-slate-gray text-lg leading-8 mt-6  sm:max-w-sm px-2">
             Although the Cardigan Welsh Corgi was first shown in English in 1919
             and the English Cardigan Welsh Corgi Associated was founded in 1926,
             the Cardigans and Pembrokes were not finally declared to be separate
@@ -55,7 +55,7 @@ const History = () => {
             Herding group.
           </p>
         </div>
-        <div>
+        <div className="max-lg: flex justify-center py-6">
           <img
             src={Margo5}
             width={480}

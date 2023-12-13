@@ -10,17 +10,20 @@ const Hero = () => {
       className="relative top-4 w-full flex xl:flex-row max-sm:flex-col justify-center min-h-screen gap-10 max-container "
     >
       <div className=" xl:w-2/5 flex flex-col justify-center items-center w-full  max-xl:padding-x pt-2">
-        <h1 className=" ml-8 font-playfair bold italic text-cyan-800  text-4xl max-sm:text-[42px] max-sm:pt-10 max-sm:pl-4 max-sm:leading-[62px] font-bol ">
-          Welcome to Corgiland
+        <h1 className=" ml-8 font-playfair  text-cyan-800  text-4xl max-sm:text-[42px] max-sm:pt-10 max-sm:pl-4 max-sm:leading-[62px] font-bol ">
+          Welcome to <br />
+          <span className="font-playfair font-bold italic text-cyan-700   ">
+            It Is Corgiland !
+          </span>
         </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 ml-8 sm:max-w-sm">
-          At Corgiland, we're dedicated to sharing the joy of Cardigan Welsh
-          Corgis with fellow dog lovers like you. Our furry family members are
-          more than just pets; they're our passion and our pride. As responsible
-          breeders, we've poured our hearts into raising these remarkable
-          Corgis, known for their endearing personalities, intelligence, and, of
-          course, those adorable ears! Our commitment to their well-being,
-          health, and happiness is unwavering.
+          At <span className="font-bold">It Is Corgiland</span>, we're dedicated
+          to sharing the joy of Cardigan Welsh Corgis with fellow dog lovers
+          like you. Our furry family members are more than just pets; they're
+          our passion and our pride. As responsible breeders, we've poured our
+          hearts into raising these remarkable Corgis, known for their endearing
+          personalities, intelligence, and, of course, those adorable ears! Our
+          commitment to their well-being, health, and happiness is unwavering.
         </p>
         <Button label="Adoption Application" />
       </div>

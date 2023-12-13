@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/icons/logo-corgi-rounded 1.png";
+import logo from "../assets/icons/logo-new.png";
 import { menuItems } from "../constants";
 import hamburger from "../assets/icons/hamburger.svg";
 import { RiCloseLine } from "react-icons/ri";
@@ -15,19 +15,20 @@ const Nav = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <header className=" relative padding-x  py-4 mb-8  z-10 w-full bg-teal-medium max-sm:flex flex-row ">
-      <nav className="flex justify-between gap-3 items-center max-container">
+      <nav className="flex  justify-between gap-3 bg-teal-medium items-center max-container">
         <div className="flex items-start">
           <a href="/">
             <img
               src={logo}
               alt="Logo"
-              width={130}
-              height={130}
+              width={140}
+              height={140}
               className="rounded-full max-sm:hidden"
             />
           </a>
-          {/* <div className="flex justify-between gap-3 "> */}
-          <div className="flex justify-center sm:relative sticky top-0 gap-3 max-sm:items-start">
+        </div>
+        {/* <div className="flex justify-between gap-3 "> */}
+        {/* <div className="flex justify-center sm:relative sticky top-0 gap-3 ">
             <div className="icon">
               <SocialIcon
                 url="https://www.instagram.com/p/CyMI4sGuTXL/?igshid=MzRlODBiNWFlZA=="
@@ -43,9 +44,9 @@ const Nav = () => {
             {/* <div className="icon">
               <SocialIcon url="www.whatsup.com" />
             </div> */}
-          </div>
-        </div>
-        <ul className="flex  items-center gap-16 max-lg:hidden max-sm: justify-end align-center">
+        {/* </div>
+        </div> */}{" "}
+        <ul className="flex  items-center justify-end gap-12 max-lg:hidden max-sm: justify-end align-center">
           {menuItems.map((menu, index) => {
             return (
               <li className="font-montserrat leading-normal text-lg text-white">
@@ -73,7 +74,7 @@ const Nav = () => {
           {toggleMenu && (
             <div>
               <div>
-                <ul className="flex flex-col  text-right pl-4">
+                <ul className="flex flex-col justify-end text-white text-right pl-4">
                   {menuItems.map((item) => (
                     // <li key={item.title}>
                     //   <Link to={item.url}
@@ -83,7 +84,7 @@ const Nav = () => {
                     //     {item.title}
                     //   </Link>
                     // </li
-                    <li className="flex flex-col justify-center text-left p-2">
+                    <li className="flex flex-col justify-end text-left p-2">
                       <MenuItems items={item} key={item.title} />
                     </li>
                   ))}

@@ -13,17 +13,17 @@ const Affiliations = () => {
       className="max-container mt-4 max-sm:mt-12  py-4"
     >
       <div className="flex justify-center">
-        <h2 className="text-3xl font-epilogue italic font-bold text-sky-950 ">
+        <h2 className="text-3xl font-epilogue italic font-bold text-sky-800 ">
           Our Affliations
         </h2>
       </div>
-      <div className="flex flex-wrap justify-between gap-3 py-6">
+      <div className="flex flex-wrap justify-between gap-3 py-6 max-sm:justify-center">
         <div className="bg-[#c8a4da] rounded-lg flex items-center py-4 px-4 hover:bg-slate-50">
           <a
             href="https://www.gooddog.com/breeders/corgiland-florida"
             target="_blank"
           >
-            <img src={gooddog} width={180} height={180} />
+            <img src={gooddog} alt="goodDog" width={180} height={180} />
           </a>
         </div>{" "}
         <div className="bg-[#c8a4da] rounded-lg flex items-center py-4 px-4 hover:bg-slate-50">
