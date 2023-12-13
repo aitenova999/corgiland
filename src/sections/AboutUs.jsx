@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <section
       id="about-us"
-      className="sm:flex-col-reverse"
+      className="  sm:flex-col-reverse justify-center"
       //   className="bg-[#8af9e3]"
       //   className="flex justify-between  max-lg:flex-col gap-10 w-full max-container"
     >

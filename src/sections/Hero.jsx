@@ -25,7 +25,12 @@ const Hero = () => {
           personalities, intelligence, and, of course, those adorable ears! Our
           commitment to their well-being, health, and happiness is unwavering.
         </p>
-        <Button label="Adoption Application" />
+        <a
+          target="blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdADXBCsN0-wWt3L7nsvLITCURhRNc2J2l5Vh0et8f0PJYn4g/viewform?usp=sf_link"
+        >
+          <Button label="Adoption Application" />
+        </a>
       </div>
 
       <div className="relative pt-12 flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-20 bg-teal-100 bg-cover bg-center rounded-sm">

@@ -58,7 +58,7 @@ const Nav = () => {
         <div className="hidden max-lg:block max-sm:flex justify-end align-top">
           {toggleMenu ? (
             <RiCloseLine
-              color="black"
+              color="white"
               size={25}
               onClick={() => setToggleMenu(false)}
             />
@@ -66,6 +66,7 @@ const Nav = () => {
             <img
               src={hamburger}
               alt="Hamburger"
+              color="white"
               width={25}
               height={25}
               onClick={() => setToggleMenu(true)}

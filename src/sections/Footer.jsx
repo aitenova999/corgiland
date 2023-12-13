@@ -3,6 +3,7 @@ import { SocialIcon } from "react-social-icons/component";
 import "react-social-icons/instagram";
 import "react-social-icons/facebook";
 import "react-social-icons/telegram";
+import "react-social-icons/tiktok";
 import logo from "../assets/icons/logo-new.png";
 
 const Footer = () => {
@@ -31,6 +32,9 @@ const Footer = () => {
         </div>
         <div className="icon">
           <SocialIcon url="www.telegram.com/@itiscorgiland" />
+        </div>
+        <div className="icon">
+          <SocialIcon url="https://www.tiktok.com/@itiscorgiland?_t=8h8nrqpSbOg&_r=1" />
         </div>
       </div>
     </section>

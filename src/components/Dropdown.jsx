@@ -3,7 +3,7 @@ const Dropdown = ({ submenus, dropdown }) => {
     <ul
       className={`dropdown ${
         dropdown ? "block" : "hidden"
-      } bg-teal-300 rounded-md`}
+      } bg-teal-500 rounded-md`}
     >
       {submenus.map((submenu, index) => (
         <li key={index} className="pl-2 py-2 ">
