@@ -1,5 +1,6 @@
 import React from "react";
 import { margo1, aboutMe, Nastya, Sasha } from "../assets/images";
+import Connect from "../components/Connect";
 
 const AboutUs = () => {
   return (
@@ -42,6 +43,9 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
+      <div className="mt-10">
+        <Connect />
+      </div>
       <div className=" relative top-8 flex flex-1 justify-around gap-10 max-lg:flex-col  bg-gradient-to-r from-teal-100 to-cyan-200">
         <div>
           <p className="font-montserrat text-slate-gray text-lg leading-8 mt-10 mb-14 sm:max-w-sm px-4">
@@ -54,6 +58,7 @@ const AboutUs = () => {
             Produce Unique, Healthy, And Happy Corgis.
           </p>
         </div>
+
         <div
           className=" rleative items-center py-8 max-sm:flex  justify-center
       "

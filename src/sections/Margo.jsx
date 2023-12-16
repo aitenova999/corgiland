@@ -45,10 +45,10 @@ const Margo = () => {
               <span className="font-bold">DM:</span> Clear
             </p>
             <p>
-              <span className="font-bold">EIC:</span> Pending
+              <span className="font-bold">EIC:</span> Clear
             </p>
             <p>
-              <span className="font-bold">VWD1:</span> Pending
+              <span className="font-bold">VWD1:</span> Clear
             </p>
             <p>
               <span className="font-bold">PRA-RCD3:</span> Clear
