@@ -1,10 +1,10 @@
 import React from "react";
 import img2 from "../assets/icons/img2.webp";
-import img3 from "../assets/icons/img3.webp";
+import gensol from "../assets/icons/gensol.png";
 import img4 from "../assets/icons/img4.webp";
-import img5 from "../assets/icons/img5.webp";
+import grizzly from "../assets/icons/grizzly.webp";
 import img6 from "../assets/icons/img6.webp";
-import gooddog from "../assets/icons/gooddog.png";
+import gooddog from "../assets/icons/gooddog.jpg";
 
 const Affiliations = () => {
   return (
@@ -27,13 +27,17 @@ const Affiliations = () => {
           </a>
         </div>{" "}
         <div className="bg-[#c8a4da] rounded-lg flex items-center py-4 px-4 hover:bg-slate-50">
-          <img src={img3} width={180} />
+          <a href="https://www.gensoldx.com/" target="_blank">
+            <img src={gensol} alt="gensol" width={180} />
+          </a>
         </div>
-        <div className="bg-[#c8a4da] rounded-lg flex items-center py-4 px-4 hover:bg-slate-50">
+        {/* <div className="bg-[#c8a4da] rounded-lg flex items-center py-4 px-4 hover:bg-slate-50">
           <img src={img4} width={180} />
-        </div>
+        </div> */}
         <div className="bg-[#c8a4da] rounded-lg flex items-center py-4 px-4 hover:bg-slate-50">
-          <img src={img5} width={180} />
+          <a href="https://grizzlypetproducts.com/" target="_blank">
+            <img src={grizzly} width={180} />
+          </a>
         </div>
         <div className="bg-[#c8a4da] rounded-lg flex items-center py-4 px-4 hover:bg-slate-50">
           <img src={img6} width={180} />

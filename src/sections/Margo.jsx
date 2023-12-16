@@ -73,7 +73,7 @@ const Margo = () => {
             to play, run and do different commands such as sit, stay, and come.
             Much more to learn for possible competitions in future. Absolutely
             loves belly rubs and sleeps on her back with paws hanging in air. A
-            lot of personality in such little body. We feel in love with her
+            lot of personality in such little body. We fell in love with her
             right away
           </p>
         </div>

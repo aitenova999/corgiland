@@ -12,6 +12,9 @@ import History from "./sections/History";
 import HealthGenetics from "./sections/HealthGenetics";
 import Gallery from "./components/Gallery";
 import Footer from "./sections/Footer";
+import CurrentLitter from "./sections/CurrentLitter";
+import PuppyInformation from "./sections/PuppyInformation";
+
 import {
   BrowserRouter as Router,
   Outlet,
@@ -19,38 +22,33 @@ import {
   Routes,
 } from "react-router-dom";
 import UpcomingLitters from "./sections/UpcomingLitters";
+import PageNotFound from "./components/PageNotFound";
+import OurProgram from "./sections/OurProgram";
+import Waitlist from "./sections/Waitlist";
 const App = () => {
   return (
-    <Router>
-      <div>
-        <Nav />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/affiliations" element={<Affiliations />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/adoption" element={<Adoption />} />
-          <Route path="/contact" element={<ContactUs2 />} />
-          <Route path="/margo" exact element={<Margo />} />
-          <Route path="/hank" exact element={<Hank />} />
-          <Route path="/about-breed" exact element={<AboutBreed />} />
-          <Route path="/upcomingLitters" exact element={<UpcomingLitters />} />
-          <Route path="/history" exact element={<History />} />
+    <div>
+      <Nav />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/affiliations" element={<Affiliations />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/adoption" element={<Adoption />} />
+        <Route path="/contact" element={<ContactUs2 />} />
+        <Route path="/margo" exact element={<Margo />} />
+        <Route path="/hank" exact element={<Hank />} />
+        <Route path="/about-breed" exact element={<AboutBreed />} />
+        <Route path="/our-puppies-program" exact element={<OurProgram />} />
+        <Route path="/upcomingLitters" exact element={<UpcomingLitters />} />
+        <Route path="/currentLitters" exact element={<CurrentLitter />} />
+        <Route path="/history" exact element={<History />} />
 
-          <Route
-            path="/health-and-genetics"
-            exact
-            element={<HealthGenetics />}
-          />
-        </Routes>
-        {/* <Hero />
-        <Affiliations />
-        <AboutUs />
-        <Adoption />
-        <Contact /> */}
-        {/* <OurCorgis /> */}
-      </div>
-    </Router>
+        <Route path="/health-and-genetics" exact element={<HealthGenetics />} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="/waitlist" exact element={<Waitlist />} />
+      </Routes>
+    </div>
   );
 };
 const Home = () => {

@@ -39,15 +39,15 @@ export const menuItems = [
     url: "/puppies",
     submenu: [
       {
-        title: "puppy information",
-        url: "puppyInformation",
+        title: "Our puppies program",
+        url: "/our-puppies-program",
       },
       {
-        title: "upcoming litters",
+        title: "Upcoming litters",
         url: "/upcomingLitters",
       },
       {
-        title: "current litters",
+        title: "Current litters",
         url: "/currentLitters",
       },
     ],
@@ -71,16 +71,20 @@ export const menuItems = [
     url: "/info",
     submenu: [
       {
-        title: "about us",
+        title: "About Us",
         url: "/about-us",
       },
       {
-        title: "Cordigan Welsh Corgis",
+        title: "Cardigan Welsh Corgis",
         url: "/about-breed",
       },
       {
         title: "History of the breed",
         url: "history",
+      },
+      {
+        title: "Our program",
+        url: "/our-program",
       },
     ],
   },
@@ -93,13 +97,60 @@ export const menuItems = [
     url: "/health-and-genetics",
     submenu: [
       {
-        title: "health and genetics",
+        title: "Health and Genetics",
         url: "/health-and-genetics",
       },
-      {
-        title: "DNA and testing",
-        url: "/DNA",
-      },
+      // {
+      //   title: "DNA and testing",
+      //   url: "/DNA",
+      // },
     ],
+  },
+];
+
+export const puppyProgram = [
+  {
+    title: "Responsible Breeding",
+    text1:
+      "We specialize in responsible breeding practices that prioritize the health, temperament, and lineage of our Cardigan Welsh Corgis.",
+    text2:
+      "Our breeding program adheres to ethical standards and ensures that our Corgis are raised in a loving and nurturing environment. ",
+  },
+
+  {
+    title: "Exceptional Care",
+    text1:
+      "Our Corgis receive top-notch care, including regular veterinary check-ups, vaccinations, and proper nutrition.",
+    text2:
+      "Socialization and mental stimulation are essential aspects of our daily routines to raise well-adjusted and happy Corgis.",
+  },
+
+  {
+    title: "Health Screening",
+    text1:
+      "We conduct thorough health screenings and genetic testing to minimize the risk of hereditary diseases within our breeding lines.",
+    text2:
+      "Your Corgi’s health is our priority, from the moment they are born and throughout their lives",
+  },
+
+  {
+    title: "Education and Support",
+    text1:
+      "We’re here to provide you with valuable information and support, from choosing the right Corgi for your lifestyle to raising and training your new companion.",
+    text2: "Our expertise is just a message or a call away. ",
+  },
+
+  {
+    title: "Finding Forever Homes",
+    text1:
+      " • Our joy comes from seeing our Corgis find loving forever homes where they’ll be cherished members of the family.",
+    text2:
+      "We carefully match Corgis with new families to ensure a happy and harmonious future together.",
+  },
+  {
+    title: "Community Engagement",
+    text1:
+      "We actively engage with the Cardigan Welsh Corgi community, participating in events, and sharing our knowledge and love for the breed.",
+    text2: "We’re dedicated to promoting responsible Corgi ownership.",
   },
 ];
