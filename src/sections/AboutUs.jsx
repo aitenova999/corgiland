@@ -43,12 +43,12 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 px-6 py-6 bg-[#c8a4da]">
         <Connect />
       </div>
       <div className=" relative top-8 flex flex-1 justify-around gap-10 max-lg:flex-col  bg-gradient-to-r from-teal-100 to-cyan-200">
         <div>
-          <p className="font-montserrat text-slate-gray text-lg leading-8 mt-10 mb-14 sm:max-w-sm px-4">
+          <p className="font-montserrat text-slate-gray text-lg leading-8 mt-10 mb-2 sm:max-w-sm px-4">
             I’m Sr. Payroll Specialist Who Decided To Devote Extra Time To
             Breeding And Producing Quality Puppies. I Have A Master’s Degree In
             Human Resource Management Track From The University Of Central

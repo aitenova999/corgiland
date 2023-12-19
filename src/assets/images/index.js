@@ -33,6 +33,14 @@ import Margo14 from "./Margo14.jpg";
 import MargoandHank3 from "./MargoandHank3.jpg";
 import Nastya from "./Nastya.jpg";
 import Sasha from "./Sasha.jpg";
+import Comet from "./puppies/Comet-boy.jpg";
+import Vixen from "./puppies/Vixen-boy.jpg";
+import Dasher from "./puppies/Dasher-boy.jpg";
+import Doner from "./puppies/Doner-boy.jpg";
+import Cupid from "./puppies/Cupid-boy.jpg";
+import Dancer from "./puppies/Dancer-girl.jpg";
+import Prancy from "./puppies/Prnacy-girl.jpg";
+import Rudolph from "./puppies/Rudolph-boy.jpg";
 
 export {
   hank1,
@@ -70,4 +78,12 @@ export {
   MargoandHank3,
   Nastya,
   Sasha,
+  Comet,
+  Rudolph,
+  Vixen,
+  Dancer,
+  Dasher,
+  Doner,
+  Prancy,
+  Cupid,
 };

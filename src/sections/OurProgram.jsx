@@ -1,6 +1,7 @@
 import React from "react";
 import ProgramCard from "../components/ProgramCard";
 import { puppyProgram } from "../constants";
+import Connect from "../components/Connect";
 
 const OurProgram = () => {
   return (
@@ -15,6 +16,7 @@ const OurProgram = () => {
           happiness of our Cardigan Welsh Corgis. Here’s what we do:
         </p>
       </div>
+
       {puppyProgram.map((item) => (
         <ProgramCard key={item.title} {...item} />
       ))}

@@ -82,10 +82,10 @@ export const menuItems = [
         title: "History of the breed",
         url: "history",
       },
-      {
-        title: "Our program",
-        url: "/our-program",
-      },
+      // {
+      //   title: "Our program",
+      //   url: "/our-program",
+      // },
     ],
   },
   {
